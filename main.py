@@ -123,7 +123,7 @@ def _make_spec(self, td_params):
             low=-torch.pi,
             high=torch.pi,
             shape=(),
-            dtype=torch.bfloat16,
+            dtype=torch.float32,
         ),
         thdot=BoundedTensorSpec(
             low=-td_params["params", "max_speed"],
